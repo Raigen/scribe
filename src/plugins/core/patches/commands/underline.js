@@ -6,6 +6,9 @@ define(function () {
     return function (scribe) {
       var underlineCommand = new scribe.api.CommandPatch('underline');
 
+      /**
+       *
+       */
       underlineCommand.queryState = function () {
         var selection = new scribe.api.Selection();
         var underlineElement = selection.getContaining(function (element) {
